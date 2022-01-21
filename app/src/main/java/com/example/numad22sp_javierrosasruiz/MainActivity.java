@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                System.out.print("It Worked!");
+
                 Toast.makeText(MainActivity.this, "             Javier \n rosasruiz.j@northeastern.edu", Toast.LENGTH_SHORT).show();
             }
         });
