@@ -1,7 +1,6 @@
 package com.example.numad22sp_javierrosasruiz;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
