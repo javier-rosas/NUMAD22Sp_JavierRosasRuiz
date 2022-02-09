@@ -42,18 +42,6 @@ public class Buttons extends AppCompatActivity implements View.OnClickListener
         f.setOnClickListener(Buttons.this);
 
 
-        /*
-        a.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-         */
-
-
     }
 
     @Override
@@ -103,7 +91,10 @@ public class Buttons extends AppCompatActivity implements View.OnClickListener
                 Button buttonF = findViewById(R.id.buttonF);
                 String buttonTextF = buttonF.getText().toString();
                 pressedText.setText("Pressed: " + buttonTextF);
+                System.out.println("Pressed button F");
                 break;
+
+
 
         }
 

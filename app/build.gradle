@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/Users/javierrosas/JR_Key_Store/JRKEY')
+            keyAlias 'key0'
+            storePassword 'Ervija07140.'
+            keyPassword 'Ervija07140.'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
