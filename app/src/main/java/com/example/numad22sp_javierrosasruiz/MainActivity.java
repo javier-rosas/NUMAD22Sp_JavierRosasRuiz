@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +16,8 @@ public class MainActivity extends AppCompatActivity
 
     Button button2;
 
+    Button button3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity
 
         button1 = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
 
         button1.setOnClickListener(new View.OnClickListener()
         {
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Log.d(TAG, "onClick: Button 1 pressed!");
-                Toast.makeText(MainActivity.this, "             Javier \n rosasruiz.j@northeastern.edu", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, AboutMe.class));
             }
         });
 
@@ -46,5 +48,18 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+
+        button3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Log.d(TAG, "onClick: Button 3 pressed!");
+                startActivity(new Intent(MainActivity.this, LinkCollector.class));
+
+            }
+        });
     }
 }
+

@@ -7,4 +7,12 @@
     <string name="c">C</string>
     <string name="b">B</string>
     <string name="pressed">Pressed:</string>
+    <string name="textview">Javier</string>
+    <string name="textview2">rosasruiz.j@northeastern.edu</string>
+    <string name="link_collector">Link Collector</string>
+    <string name="about_me">About Me</string>
+    <string name="clicky_clicky">Clicky Clicky</string>
+    <string name="description">Description</string>
+    <string name="item_name">Item name</string>
+    <string name="item_description">Item name</string>
 </resources>
